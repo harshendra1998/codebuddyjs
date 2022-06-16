@@ -1,0 +1,16 @@
+// level {2}
+var input = 6
+var output = 0
+var temp = 0
+var temp2 = 0
+for (let i = 1; i<=6; i++){
+	if(temp2 ==0 && temp ==0){
+		temp2 = 1
+	}
+	else {
+		var insidetemp = temp2;
+		temp2 = temp + temp2;
+		temp = insidetemp;
+	}
+	output = output + temp2
+}
